@@ -1,0 +1,14 @@
+name: test
+
+on: push
+
+job:
+  test;
+  name: lint code test
+  runs on: ubuntu-latest
+  steps:
+    name: checkout code
+    uses: action/checkout@v2
+
+    name: Run test
+    uses: github/test@v3
