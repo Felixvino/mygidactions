@@ -1,14 +1,15 @@
 name: test
 
-on: push
+on: 
+push:
 
-job:
-  test;
+jobs:
+  test:
   name: lint code test
-  runs on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
-    name: checkout code
+    -name: checkout code
     uses: action/checkout@v2
 
-    name: Run test
+   -name: Run test
     uses: github/test@v3
