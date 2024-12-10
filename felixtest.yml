@@ -1,0 +1,16 @@
+name: My Project
+description: A sample project to demonstrate YAML syntax
+
+dependencies:
+  - python>=3.6
+  - numpy
+  - pandas
+
+environment:
+  python: 3.8
+
+scripts:
+  - script1:
+      command: python script1.py
+  - script2:
+      command: python script2.py --arg1 value1 --arg2 value2
